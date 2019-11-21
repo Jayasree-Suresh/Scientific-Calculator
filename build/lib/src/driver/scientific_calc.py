@@ -23,6 +23,6 @@ class ScientificCalc:
             cls.result = exp_value ** cls.power
             return cls.result
         except ValueError as error:
-            logging.error(error)
+            logging.exception(error)
             print(error)
             return "Please enter float or integer types input."
